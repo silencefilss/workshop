@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" class="bg-dark text-light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Cultur - Le Workshop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#3d0b0b',
+                        light: '#e5e7eb',
+                        accent: '#ffffff',
+                        'accent-dark': '#d1d5db'
+                    },
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="antialiased selection:bg-accent selection:text-dark relative">
+
+    <div class="noise"></div>
+    <div class="custom-cursor hidden md:block"></div>
+
+    <!-- Header (Simplified for subpages) -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+        <a href="index.html"
+            class="text-2xl font-black tracking-tighter interactive z-50 flex items-center gap-2 group">
+            <i class="ph ph-arrow-left text-2xl group-hover:-translate-x-2 transition-transform"></i>
+            <span class="hidden sm:inline-block">Retour</span>
+        </a>
+        <a href="index.html"
+            class="text-2xl font-black tracking-tighter interactive z-50 mix-blend-difference relative group flex items-center gap-2">
+            <img src="img/logo/workshop.png" alt="Logo Le Workshop"
+                class="h-16 md:h-24 w-auto object-contain -mr-4 md:-mr-8">
+            <span class="hidden sm:inline-block">LE WORKSHOP<span
+                    class="text-accent group-hover:animate-pulse">.</span></span>
+        </a>
+    </header>
+
+    <main class="relative z-10 w-full pt-48 min-h-screen">
+        <!-- Project Hero -->
+        <section class="px-6 md:px-12 pb-20 relative">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-12 reveal-up">
+                    <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-6">Code Cultur</h1>
+                    <div class="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-bold text-gray-400">
+                        <span class="px-4 py-2 border border-white/20 rounded-full">Web TV</span>
+                        <span class="px-4 py-2 border border-white/20 rounded-full">Direction Artistique</span>
+                        <span class="px-4 py-2 border border-white/20 rounded-full text-white">2024</span>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full aspect-video rounded-3xl overflow-hidden bg-white/5 border border-white/10 relative reveal-up flex items-center justify-center">
+                    <p class="text-gray-500 font-light flex items-center gap-2"><i class="ph ph-image"></i> Insérer
+                        image de l'intro / Waiting screen ici</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="py-20 px-6 md:px-12 relative border-t border-white/5 bg-white/[0.02]">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="md:col-span-1 reveal-up">
+                    <h3 class="text-xl font-bold mb-4">Le Brief</h3>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Création d'une Web TV intitulée Code Cultur. Le but de l'intervention était de réaliser
+                        l'ensemble de la direction artistique (DA) orientée broadcast, incluant l'écran d'attente
+                        (waiting screen), l'introduction de l'émission, et les maquettes d'écrans partagés (split
+                        screens).
+                    </p>
+                </div>
+
+                <div class="md:col-span-2 space-y-16">
+                    <div class="reveal-up">
+                        <h3 class="text-3xl font-bold mb-6">Split Screen & UI Broadcast</h3>
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center">
+                            <p class="text-gray-500 font-light flex items-center gap-2"><i class="ph ph-image"></i>
+                                Insérer visual split screen ici</p>
+                        </div>
+                    </div>
+
+                    <div class="reveal-up">
+                        <h3 class="text-3xl font-bold mb-6">Snap & Backstage (Optionnel)</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div
+                                class="aspect-[4/5] rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex flex-col items-center justify-center p-6 text-center">
+                                <i class="ph ph-camera text-4xl text-gray-600 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-light">Image snap 1 (à évaluer pour l'aspect
+                                    premium)</p>
+                            </div>
+                            <div
+                                class="aspect-[4/5] rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex flex-col items-center justify-center p-6 text-center">
+                                <i class="ph ph-camera text-4xl text-gray-600 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-light">Image snap 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Project Footer -->
+        <section class="py-32 text-center reveal-up border-t border-white/5">
+            <p class="text-gray-400 uppercase tracking-widest text-sm mb-4">Projet Suivant</p>
+            <a href="projet-maghribi-jersey.html"
+                class="text-5xl md:text-7xl font-black uppercase tracking-tighter interactive hover:text-light transition-colors relative group inline-block">
+                Maghribi Jersey
+                <i
+                    class="ph ph-arrow-right absolute -right-16 top-1/2 -translate-y-1/2 text-5xl group-hover:translate-x-4 transition-transform opacity-0 group-hover:opacity-100"></i>
+            </a>
+        </section>
+    </main>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
